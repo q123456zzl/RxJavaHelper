@@ -30,6 +30,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onNext(String s) {
                 Log.i(TAG, "2");
+                Log.i(TAG, s);
             }
         });
     }
