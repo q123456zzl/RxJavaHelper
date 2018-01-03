@@ -9,6 +9,8 @@ public class OperatorMap<T, R> implements Operator<R, T> {
         this.transform = transform;
     }
 
+
+
     @Override
     public Subscribe<? super T> call(Subscribe<? super R> subscribe) {
         return new MapSubscriber<>(subscribe, transform);
